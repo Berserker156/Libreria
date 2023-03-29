@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Tarea.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Pagina de prueba</title>
+    <link href="bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <asp:LinkButton class="navbar-brand" runat="server" id="link_cuatro" OnClick="link_cuatro_Click" >Inicio</asp:LinkButton>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <asp:LinkButton class="nav-link active" runat="server" id="link_uno" OnClick="link_uno_Click" aria-current="page">Tabla</asp:LinkButton>
+                        <asp:LinkButton class="nav-link" runat="server" id="link_dos" OnClick="link_dos_Click" >Fotos</asp:LinkButton>
+                        <asp:LinkButton class="nav-link" runat="server" ID="link_tres" OnClick="link_tres_Click">Informacion</asp:LinkButton>
+                        <asp:LinkButton class="nav-link" runat="server" id="link_cinco" Onclick="link_cinco_Click" >Contactos</asp:LinkButton>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </form>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <%-- aqui se renderinzan los formularios --%>
+    </asp:ContentPlaceHolder>
+</body>
+
+    <p aria-hidden="true">
+  <span class="placeholder col-6"></span>
+</p>
+
+<a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-4" aria-hidden="true"></a>
+</html>
