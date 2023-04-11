@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL_autor.cs" />
+    <Compile Include="BL_Formularios.cs" />
     <Compile Include="BL_Permisos.cs" />
     <Compile Include="BL_Roles.cs" />
-    <Compile Include="BL_Usuarios.cs" />
+    <Compile Include="BL_RolFormulario.cs" />
+    <Compile Include="Bl_Usuarios.cs" />
+    <Compile Include="BL_UsuariosBase.cs" />
+    <Compile Include="BL_Comentario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

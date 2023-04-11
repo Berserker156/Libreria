@@ -64,7 +64,7 @@ namespace Libreria
                 return false;
             }
 
-            if (!BL_Usuarios.ExisteUserName(txtUsuario.Text))
+            if (!BL_UsuariosBase.ExisteUserName(txtUsuario.Text))
             {
                 Mensaje("Credenciales Incorrectas", (int)eMessage.Alerta);
                 return false;

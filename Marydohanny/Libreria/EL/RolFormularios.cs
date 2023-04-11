@@ -32,5 +32,6 @@ namespace EL
         public int? IdUsuarioActualiza { get; set; }
 
         public DateTime? FechaActualizacion { get; set; }
+
     }
 }

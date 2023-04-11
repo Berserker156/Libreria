@@ -14,12 +14,6 @@ namespace DAL
         }
 
 
-        public static bool ExisteUserName(string UserName)
-        {
-            using (BDDinamitaWeb bd = new BDDinamitaWeb())
-            {
-                return bd.Usuarios.Where(a => a.UserName.ToLower() == UserName.ToLower()).Count() > 0;
-            }
-        }
+  
     }
 }
